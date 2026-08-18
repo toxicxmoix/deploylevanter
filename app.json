@@ -2,7 +2,7 @@
   "name": "Levanter",
   "description": "",
   "keywords": ["nodejs"],
-  "repository": "https://github.com/ayazaliofc/deploy-levanter",
+  "repository": "https://github.com/toxicxmoix/deploylevanter",
   "success_url": "/",
   "stack": "container",
   "env": {
@@ -29,7 +29,9 @@
     "STICKER_PACKNAME": {
       "description": "sticker pack info",
       "required": false,
-      "value": ",𝐙ᴀᴇ꧊ɪx 🤍🪻"
+      "value": ",—𝐒ᴛɪᴄᴋᴇʀ'𝐬 𝐋ᴀɴᴅ 😝💦‹‹
+
+• Mᴏɪᴢ💀"
     },
     "HEROKU_APP_NAME": {
       "description": "Heroku app name, same as above entered.",
