@@ -11,6 +11,11 @@
       "required": true,
       "value": ""
     },
+    "SUDO": {
+      "description": "Admin Number with country code",
+      "required": true,
+      "value": ""
+    },
     "STICKER_PACKNAME": {
       "description": "Sticker Pack Name",
       "required": true,
