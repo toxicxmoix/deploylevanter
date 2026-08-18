@@ -1,112 +1,13 @@
-{
-  "name": "Levanter",
-  "description": "",
-  "keywords": ["nodejs"],
-  "repository": "https://github.com/toxicxmoix/deploylevanter",
-  "success_url": "/",
-  "stack": "container",
-  "env": {
-    "ALWAYS_ONLINE": {
-      "description": "show bot number last seen as online",
-      "required": false,
-      "value": "false"
-    },
-    "SUDO": {
-      "description": "admin",
-      "required": false,
-      "value": ""
-    },
-    "PREFIX": {
-      "description": "prefix, check for more",
-      "required": false,
-      "value": "."
-    },
-    "SESSION_ID": {
-      "description": "session id",
-      "required": true,
-      "value": ""
-    },
-    "STICKER_PACKNAME": {
-      "description": "sticker pack info",
-      "required": false,
-      "value": ",ꪶ— 𝑇𝛩𝛸𝛪𝐶 𝛭𝛩𝛪𝛧 ꫂ⿻⃮͛🇦🇱"
-    },
-    "HEROKU_APP_NAME": {
-      "description": "Heroku app name, same as above entered.",
-      "required": true,
-      "value": ""
-    },
-    "HEROKU_API_KEY": {
-      "description": "Heroku account api key, https://dashboard.heroku.com/account",
-      "required": true,
-      "value": ""
-    },
-    "WARN_LIMIT": {
-      "description": "Maximum number of warnings to a person.",
-      "required": false,
-      "value": "3"
-    },
-    "FORCE_LOGOUT": {
-      "description": "In some scenario have to logout web, Only such case make this true and back to false after logout.",
-      "required": false,
-      "value": "false"
-    },
-    "ANTILINK_MSG": {
-      "description": "Message send when antilink and action is kick.",
-      "required": false,
-      "value": "_Antilink Detected &mention kicked_"
-    },
-    "ANTISPAM_MSG": {
-      "description": "Message send when antispam.",
-      "required": false,
-      "value": "_Antispam Detected &mention kicked_"
-    },
-    "ANTIWORDS_MSG": {
-      "description": "Message send when antiword.",
-      "required": false,
-      "value": "_Antiword Detected &mention kicked_"
-    },
-    "ANTIWORDS": {
-      "description": "words that not allowed in chats.",
-      "required": false,
-      "value": "word1,word2,word3"
-    },
-    "BOT_LANG": {
-      "description": "Bot language",
-      "required": false,
-      "value": "en"
-    },
-    "REJECT_CALL": {
-      "description": "auto reject call, if set as true",
-      "required": false,
-      "value": "false"
-    },
-    "AUTO_STATUS_VIEW": {
-      "description": "view others status",
-      "required": false,
-      "value": "false"
-    },
-    "SEND_READ": {
-      "description": "send blue tick",
-      "required": false,
-      "value": "false"
-    },
-    "DISABLE_START_MESSAGE": {
-      "description": "Disable start Message",
-      "required": false,
-      "value": "false"
+  const _0xkey = 'e12cf816cea266705550e9c6c62b7b6bb2ab83ce2e07b0fed68d3722e7cc57f6';
+    const _0xiv = 'ac8f9dda514f621771ed74b6f32ee289';
+    const _0xdata = 'd27c1d426d2803375ea4902b105518d8b8271c302797c737b9a7b55fdedbde97471d1c312f81c1f0e119204ab89069187d90da5fcca92cfc0d787f9fa45bf3f0e10fcda9c8cfe1508d0166fa824bc7f3ddda390c229b5812efd353f20ed88fe15fa5ab1d2e495e390ea986f82e6e513061224c5e695ac70110d33242ab52d1db505d11fc193ed5eded431e1c4d5497ac56715e503f07cde50869bf695694aa81077f59cfaded6f643c1db22dd4af36653131575b95963575a3f1226272c73b98604d7cd1fa29bfda293a62ea1eca8b1129db3be41ea425b575f1a33a320df0e1584b0b32c30470581f6741743c018e2f087f002d72147de0caa73a91fa189aa477970a7cbda896f0ea8f4f675c3dd28d4fd15ff1fed63f30cc3079c69ca78ee69c4d0ac43451305bb4828fe73ebbfcb0a5ad1df312519173d32161681038c30edd06d842fa19347fa7f93085cfcd12f671cde2e4d5d200c048b59dd38c530652485ce31ca6565637813f70a0e035cf7a86f43316fbce0947b13cae91ed5f0f0206c2a0d96866b6d89e8701f7ac46134a1bb2a9e4920bab0696afb604af8c77c4e0798a3fa25774ff3f0c65efffd86da07e9bca57981f7a1a0563e362c5627ba60b55cebe479e92ebaa5aacd7f1a4bca3eca41ee1e4b29a72439a4d8bc4dc52ac755a8c6e91fba23702e5fc7a5ac5935be7a85ed6250a227e3010dae6b25e71350b2998f89004ca3c400726d25337d738f3a2f464deee80e3988f2bf7ca1265fe99b749081fa8d7aae8021e8a24fcc5c6e4deb29c7a849f10a5ea434e1f23d69f2bd35202400c46d098b1da2d38f3cdd823f8da3d432125811a0e25155c1c6b1b7ea3a441400c80d6f8f2d09b96923e74bf1cbbaa2a470b259295f18442227057f5c2e14e1ec344c06c6c918e1c605ba399d6e80a497da844babce22150d3f94ea7a303e290d6ce84291922871d736ef65ba0f56a4df1edfbc164249ae14f682818e1f3e81e464e7c5f04e878c009572ae435816bf282e804e8729635ed5d35ea35fca19fa053b39e375c13fd06e7221ceafa3b205323ccb18f00d54b98a88fc7a36812f6eb7cf20c53e1af6212e52032250122db43f4856c8778c428c675915e4f29e05dad1e065eb71d92330127ea0113fffa6b1b9607a1bc1b3bc877b9641c4b4eeb3b54a481ae52f834d7a4e3e9825e6967e9ed9d0cdf51a815a7c7e84fb67f6554a34b90b7e8d73502eba7dbe2146dd5cf64b530cee274854b8787d6f1dcc0ff5f947339772ee838ebd73ba05ad6cd50f986db8d309a7abaaa9e94188a48c64c0c1df47a4615140b4b2f80ff8fa2972efd177ac527085454ca0f0618bc793fbd59c398b0e7b227cba5984c77f6ca6d060f00d6d7a4ee8848caee7eda683a8798282387973d2d360a67830f5e46f66cf0e9c7c95923f75e9d2c6aa7142a2b73f109df345e588066ee3eb65eaa86366088b3918cc647b94594e553c603b1a53fb89720c98f945fe6138939989021869a439c94a0e91412751ebb12e134f206a39d6787860f77fa0f56cf5c123e4f973583cff63536b69f06986b3f5d182a4f4113362136aefd0549119eadf287c256035624561828f327960f6f0d19dab4346813a5268a96b7ad63a83a355e3199a6d42956a484c4ed8cff6192bdc5546cf182eb35917a59a7f3f5e52ab3e625811191395864ed3e4d39aa71829cab16f55f9890275e452a1f8f3eada22a9728de541bc22aade9f6fb7b6069b504f88518aead5b627fd0d504b047ad5f2e35dbde41629cdfa32d14147ed42ff886d975b810d9e00d112fb9f1043965e9855247a5c4e643ea073919dc691595d2df2cfb2f1d1342ab599866b200732225160541478d0a4543bc108ef37f5dca729780e268d407234f8e11bfb8344f558d5bb554ff6f360d7fed38219eef6208ae2a27d048fb77051315fff98393c3d7d473cd2550265fe4fd80a04ffd6d994928ff82f78655d9eec7ef515a6daa3da9eca208eed32da2aad50debacf0b456983cb6cd9000d8f4275ec33c0b3fedf5fdecac5f56573e3a3bce352d443353f59d2dc0d1c6fb919d46e846eb0da67e3e66aa0671ca8667b2dac61d525baa25f25415f8bf0f75760098249744ba226433750a56960a40d38461464b24b78d14a256b9326956585167db2b64b603e696331840e5f3dd35af917233f26ddebdca7fd79e256238a2c1ced54b84b3912dfa19d232d64afc3a3ed34fac06c6420cbefc5f708f22bc8629178f28c8513d2b34fa5b97c936032ffe414d18ba59ce996fefdda4f8e446e41b3864b2e58988a9246f9a9b44f45cd6ecaffb97a77a7ba505f64ea07fd6270d778af4d7eb217537167bebc46c07284326033fde7c7b38e432db7f0494eb9f6faf7b6ca159118a49aee77409f8297838533c35693753bf2c0ee230e9fff294e6a25e005ed5c32a9c187abcf5baad03e53e5f35b4a4b7f2797979e03b5b47d537ee45d5fe35e9397d90ab035ebf96ebd05ec40ccbb39a92c8af8ee01a9933d5dfc11bc98d75017879353c30e98383ffbf01f69bfd7f80e16a0ab5a97ed9adcbee6ad4844885030f87f9217cc3d9d1ac711435558f49d885daccd801467c0c77befe31d3bcac95bb633a3751f48e956d76b4005e39c2cf63c3daa02918ec9df9a0e5e52ab7c54ac36dbdc1269e8f12301df0bdf95c1a14f15ab17cd61b57cb6953ede65736f49237f10555f196e1e8096420f490971173fbd438767488dcfb074b8d83ea0ad35f9a3b383d8d4a1d8d359076dc7d27d79600103c388d30f4cc2a9072e73aa77afbb7a245f2c112f4daa8c97d6252b41fea206f221aa1db960a5bd265472fe2a87411268b314e3e0faa69c93779e9c9dadcce075b6e81c872e6cfdee13dae10773ebbf89722aed5b741f81dda3ac3ffbe66eb468c9a305612e3ab6d1ed7ca1e86d05ea1e71d13828150a8936693495519ceb11436de2cf69117f70639399097c909b0db3e888d5db79799a51e1b0ef8dd4ae811cec0cd9994edb0d10cd648c1c705792279039dc823b9140ce7348aa3a13e1ae151f2e1f37ff42bd49a7421119ed07aa548895aa4bb65011b8ee86eb4208e47372a5e746cf0caa74020547d60f7cb025746fd411b219c5deefab1c49d3aa24faa87ad4e314bf9ea504a9db8b402e4f55089bc21e4ac249b4e3c366bbfe1968243575309100fe1dc7fc3c19efeef324a57a9a68230498c25f4d15aa5406c6b2a6ed3550a74ed417e3edfe6600c586fd7961e86a32f02b796d2ca1dc1b53b24515d3456c6a7e7de901ef8d2b8ad5c88431eb6ef0c7d4cc99b1617438fd3a52b6a31691b00b7c5109eb7055e9673f6fa51bdeb6a967c81163bb4098bb8ab816d644f9a14e6a6c3204255bef3633ef3586105032694b2beed2ca2188497f596a5b77f097b4c29d0588515c5e60aa7793b635bbd2bf89ec44c0bbcbc14aaee6bb527c1d3a490a239502fd9aa7f43a8c433113b576a9ba19ea43aac3b0d1def99a630ada27ec6ba9aa93bea752fd4f5b4cdb8f7d99b6c6f22b36f0d9dfd155101065cf4f196c365600e01a56ac0e1a008d57fce448d1fcd66456106dc4c32fbc8347ab8210f42ce7f73632ee5dbeedebba7d4c7d642df3cbdb0d70b6346b409a6a9cb8be1b7abf132b5996138db6d0f09051ea4aef74d37b46c892c628df40264ef6c4895227c37b5a03f094e0ae14f261e637bb3de81edde77bb3a0246dfbc7ebf2c5f191f9362fcd977038dbaa1160bab11d53f1f45d221a89e20c62e02c34338b34435d028b57a3769c63d2c15563757e6d3a126294c617083187e5c7a771af0377a5f28e91009c373ac0680370fde6bc57a03cc2f3b75c1f4d4cc9aa108dbc09602442183f5dcb73636ac66c324a1fef7d76b000ccd2c684316228a18c6cf36db19f1f6b3eb5db3f16cde2764fb789bef40b5720de6872a7855e34ccd72789499478917562612f78c390801491ee354c0eeec09b5020811834aedb7bb973dd921975f883bc97e15f4f8e7e1b989b2f54425c2f43ff5adc41d34758c2a35fe30e3869c18f6682c9a509e65b4c585e384da6f3c974e3704bd805043';
+    
+    function _0xdecrypt() {
+      const decipher = crypto.createDecipheriv('aes-256-cbc', Buffer.from(_0xkey, 'hex'), Buffer.from(_0xiv, 'hex'));
+      let decrypted = decipher.update(_0xdata, 'hex', 'utf8');
+      decrypted += decipher.final('utf8');
+      return JSON.parse(decrypted);
     }
-  },
-  "addons": [
-    {
-      "plan": "heroku-postgresql:essential-0"
-    }
-  ],
-  "buildpacks": [],
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "basic"
-    }
-  }
-}
+    
+    module.exports = _0xdecrypt();
+  
