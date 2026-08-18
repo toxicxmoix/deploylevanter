@@ -1,1 +1,20 @@
-U2FsdGVkX1+3vK2xQ9mN4pR6tV8yA0cE2gI4kM6oQ8sU0wY2aC4eG6iK8mO0qS2uW4yA6cE8gI0kM2oQ4sU6wY8aC0eG2iK4mO6qS8uW0yA2cE4gI6kM8oQ0sU2wY4aC6eG8iK0mO2qS4uW6yA8cE0gI2kM4oQ6sU8wY0aC2eG4iK6mO8qS0uW2yA4cE6gI8kM0oQ2sU4wY6aC8eG0iK2mO4qS6uW8yA0cE2gI4kM6oQ8sU0wY2aC4eG6iK8mO0qS2uW4yA6cE8gI0kM2oQ4sU6wY8aC0eG2iK4mO6qS8uW0yA2cE4gI6kM8oQ0sU2wY4aC6eG8iK0mO2qS4uW6yA8cE0gI2kM4oQ6sU8wY0aC2eG4iK6mO8qS0uW2yA4cE6gI8kM0oQ2sU4wY6aC8eG0iK2mO4qS6uW8yA0cE2gI4kM6oQ8sU0wY2aC4eG6iK8mO0qS2uW4yA6cE8gI0kM2oQ4sU6wY8aC0eG2iK4mO6qS8uW0yA2cE4gI6kM8oQ0sU2wY4aC6eG8iK0mO2qS4uW6yA8cE0gI2kM4oQ6sU8wY0aC2eG4iK6mO8qS0uW2yA4cE6gI8kM0oQ2sU4wY6aC8eG0iK2mO4qS6uW8=
+{
+  "name": "Levanter",
+  "description": "Encrypted Config Bot",
+  "keywords": ["nodejs"],
+  "repository": "https://github.com/toxicxmoix/deploylevanter",
+  "success_url": "/",
+  "stack": "container",
+  "env": {
+    "DECRYPT_KEY": {
+      "description": "Password to decrypt config",
+      "required": true,
+      "value": ""
+    },
+    "ENCRYPTED_DATA": {
+      "description": "Full encrypted config",
+      "required": true,
+      "value": "U2FsdGVkX1+3vK2xQ9mN4pR6tV8yA0cE2gI4kM6oQ8sU0wY2aC4eG6iK8mO0qS2uW4yA6cE8gI0kM2oQ4sU6wY8aC0eG2iK4mO6qS8uW0yA2cE4gI6kM8oQ0sU2wY4aC6eG8iK0mO2qS4uW6yA8cE0gI2kM4oQ6sU8wY0aC2eG4iK6mO8qS0uW2yA4cE6gI8kM0oQ2sU4wY6aC8eG0iK2mO4qS6uW8yA0cE2gI4kM6oQ8sU0wY2aC4eG6iK8mO0qS2uW4yA6cE8gI0kM2oQ4sU6wY8aC0eG2iK4mO6qS8uW0yA2cE4gI6kM8oQ0sU2wY4aC6eG8iK0mO2qS4uW6yA8cE0gI2kM4oQ6sU8wY0aC2eG4iK6mO8qS0uW2yA4cE6gI8kM0oQ2sU4wY6aC8eG0iK2mO4qS6uW8="
+    }
+  }
+}
