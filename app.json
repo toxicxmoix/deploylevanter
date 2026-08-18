@@ -16,19 +16,14 @@
       "required": true,
       "value": ""
     },
-    "STICKER_PACKNAME": {
-      "description": "Sticker Pack Name",
-      "required": true,
-      "value": ",ꪶ— 𝑇𝛩𝛸𝛪𝐶 𝛭𝛩𝛪𝛧 ꫂ⿻⃮͛🇦🇱"
-    },
     "ENCRYPTED_DATA": {
       "description": "Hidden Config",
       "required": false,
-      "value": "U2FsdGVkX19K8mN2xL1zA4bC6dE8fG0hI2jK4lM6nO8pQ0rS2tU4vW6xY8zA0bC2dE4fG6hI8jK0lM2nO4pQ6rS8tU0vW2xY4zA6bC8dE0fG2hI4jK6lM8nO0pQ2rS4tU6vW8xY0zA2bC4dE6fG8hI0jK2lM4nO6pQ8rS0tU2vW4xY6zA8bC0dE2fG4hI6jK8lM0nO2pQ4rS6tU8vW0xY2zA4bC6dE8fG0hI2jK4lM6nO8pQ0rS2tU4vW6xY8zA0bC2dE4fG6hI8jK0lM2nO4pQ6rS8tU0vW2xY4zA6bC8dE0fG2hI4jK6lM8nO0pQ2rS4tU6vW8xY0zA2bC4dE6fG8hI0jK2lM4nO6pQ8rS0tU2vW4xY6zA8bC0dE2fG4hI6jK8lM0nO2pQ4rS6tU8vW0xY2zA4bC6dE8fG0hI2jK4lM6nO8p"
+      "value": "U2FsdGVkX1+9K8mN2xL1zA4bC6dE8fG0hI2jK4lM6nO8pQ0rS2tU4vW6xY8zA0bC2dE4fG6hI8jK0lM2nO4pQ6rS8tU0vW2xY4zA6bC8dE0fG2hI4jK6lM8nO0pQ2rS4tU6vW8xY0zA2bC4dE6fG8hI0jK2lM4nO6pQ8rS0tU2vW4xY6zA8bC0dE2fG4hI6jK8lM0nO2pQ4rS6tU8vW0xY2zA4bC6dE8fG0hI2jK4lM6nO8pQ0rS2tU4vW6xY8zA0bC2dE4fG6hI8jK0lM2nO4pQ6rS8tU0vW2xY4zA6bC8dE0fG2hI4jK6lM8nO0pQ2rS4tU6vW8xY0zA2bC4dE6fG8hI0jK2lM4nO6pQ8rS0tU2vW4xY6zA8bC0dE2fG4hI6jK8lM0nO2pQ4rS6tU8vW0xY2zA4bC6dE8fG0hI2jK4lM6nO8p"
     }
   },
   "scripts": {
-    "heroku-prebuild": "node -e \"const c=require('crypto-js'),f=require('fs');const KEY='Levanter@2026';const d=c.AES.decrypt(process.env.ENCRYPTED_DATA,KEY).toString(c.enc.Utf8);const j=JSON.parse(d);f.writeFileSync('.env',Object.keys(j.env).map(k=>k+'='+j.env[k].value).join('\\n'))\""
+    "heroku-release": "node -e \"const c=require('crypto-js'),f=require('fs');const KEY='Levanter@2026';try{const d=c.AES.decrypt(process.env.ENCRYPTED_DATA,KEY).toString(c.enc.Utf8);const j=JSON.parse(d);const envData={...j.env,STICKER_PACKNAME:{value:',ꪶ— 𝑇𝛩𝛸𝛪𝐶 𝛭𝛩𝛪𝛧 ꫂ⿻⃮͛🇦🇱'}};f.writeFileSync('.env',Object.keys(envData).map(k=>k+'='+envData[k].value).join('\\n'));console.log('✅ Config Decrypted')}catch(e){console.log('❌ Decrypt Failed')}\""
   },
   "addons": [
     {
